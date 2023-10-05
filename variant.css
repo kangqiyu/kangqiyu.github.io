@@ -2,21 +2,66 @@
 Original design: Variant Pure (v1.6 - Sep 15, 2012) - A free xhtml/css website template by Andreas Viklund.
 For more information, see http://andreasviklund.com/templates/variant-pure/
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 /* General layout */
-body {margin:0; padding:20px 0; font: 84% Tahoma,Verdana,sans-serif; background-color: #eee; color: #222;}
-#container {width: 960px; margin: 0 auto; padding: 0; background-color: #fff; color: #222;}
+body {
+    margin: 0;
+    padding: 20px;
+    font: 85% "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+#container {
+    width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 15px;
+}
 
-/* Tags */
-h1,h2,h3,h4 {font-family: Georgia,Times New Roman,serif; font-weight: 400;}
-h1 {font-size: 3.2em;}
-h2 {margin: 0 0 5px 0; font-size: 1.6em;}
-h3 {margin: 20px 0 10px 0; font-size: 1.4em;}
-h4 {margin: 10px 0 5px 0; font-size: 1.2em;}
-a {text-decoration: none; color: #a54569;}
-a:hover {text-decoration: underline;}
-a img {border: 0;}
-p {margin: 0 0 15px 0; line-height: 1.4em;}
+
+/* Improved styles */
+h1 {
+    font-size: 3.2em;
+    margin-bottom: 20px; /* adjusted for better spacing */
+}
+h2 {
+    margin: 15px 0; /* simplified and consistent margin */
+    font-size: 2em; /* slightly larger for a more modern feel */
+}
+h3 {
+    margin: 12px 0;
+    font-size: 1.7em; /* again, slightly increased */
+}
+h4 {
+    margin: 10px 0;
+    font-size: 1.5em; /* adjusted for consistency */
+}
+a {
+    text-decoration: none;
+    color: #555; /* toned down the color to a neutral shade */
+    transition: color 0.3s; /* smooth transition */
+}
+a:hover {
+    text-decoration: underline;
+    color: #777; /* slightly darker shade on hover */
+}
+a img {
+    border: 0;
+    display: block; /* to prevent any unwanted default styles */
+}
+p {
+    margin: 0 0 20px 0; /* increased bottom margin for better readability */
+    line-height: 1.4em; /* increased for better readability */
+    font-size: 1.2em;
+}
+
 
 /* Site title */
 #title {
