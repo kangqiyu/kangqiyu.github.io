@@ -7,6 +7,7 @@ For more information, see http://andreasviklund.com/templates/variant-pure/
 
 /* General layout */
 body {
+    padding-top: 80px;
     margin: 0;
     padding: 20px;
     font: 85% "Helvetica Neue", Arial, sans-serif;
@@ -14,16 +15,21 @@ body {
     color: #333;
 }
 #container {
-    width: 980px;
+    /* padding-top: 70px; */
+    width: 800px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+
 h1, h2, h3, h4 {
     font-family: 'Lato', sans-serif;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
+    color: #2c3e50; /* Dark blue for a modern look */
 }
+
 
 
 /* Improved styles */
@@ -32,12 +38,13 @@ h1 {
     margin-bottom: 20px; /* adjusted for better spacing */
 }
 h2 {
-    margin: 15px 0; /* simplified and consistent margin */
-    font-size: 2em; /* slightly larger for a more modern feel */
+    font-size: 2em;
+    font-weight: 300; /* Lighter font-weight */
 }
 h3 {
     margin: 12px 0;
-    font-size: 1.7em; /* again, slightly increased */
+    font-size: 1.5em; /* again, slightly increased */
+    font-weight: 300; /* Lighter font-weight */
 }
 h4 {
     margin: 10px 0;
@@ -60,6 +67,7 @@ p {
     margin: 0 0 20px 0; /* increased bottom margin for better readability */
     line-height: 1.4em; /* increased for better readability */
     font-size: 1.2em;
+    text-align: justify;
 }
 
 
@@ -86,25 +94,178 @@ p {
 #introtext {font-family: Georgia,Times New Roman,serif; font-size: 1.2em; color: #555; margin: 40px 40px; text-align: center;}
 
 /* Main content */
-#main {float: right; width: 700px; margin: 20px 20px 10px 20px; padding: 0; line-height: 1.3em;}
-#main h2 {clear: left; margin: 0 0 10px 0; padding: 10px 0 10px 10px; background-color: #eee; color: #555; text-decoration: none;}
+/* #main {padding-top: 50px; float: right; width: 700px; margin: 20px 20px 10px 20px; padding: 0; line-height: 1.3em;} */
+
+#main {
+    width: calc(100% - 40px); /* Adjust width to account for padding */
+    margin: 20px auto; /* Apply equal top and bottom margins, auto left and right margins for centering */
+    padding: 20px; /* If you want padding inside the main content area */
+    line-height: 1.3em;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+#main h2 {
+    clear: left;
+    margin: 0 0 20px 0; /* Increase bottom margin, remove left padding */
+    padding: 0; /* Remove padding to allow the text to align with the rest of the content */
+    background-color: transparent; /* Remove background color for a clean look */
+    color: #333; /* Use a darker grey for better contrast and readability */
+    font-size: 1.75em; /* Adjust the font size as needed */
+    font-weight: 600; /* Make the font slightly bolder */
+    text-decoration: none; /* Ensure there's no underline */
+    text-transform: uppercase; /* Optional: You can make the text uppercase for emphasis */
+    letter-spacing: 1px; /* Optional: Increase letter-spacing for a touch of elegance */
+}
+
+
+/* #main h2 {clear: left; margin: 0 0 10px 0; padding: 10px 0 10px 10px; background-color: #eee; color: #555; text-decoration: none;} */
 #pub {float: right; width: 700px; margin: 20px 20px 10px 20px; padding: 0; line-height: 1.3em;}
 
+
+
 /* Sidebar */
-#sidebar {width: 200px; float: left; margin: 20px 0 20px 20px; font-size: 1em; line-height: 1.3em;}
+/* #sidebar {width: 200px; float: left; margin: 20px 0 20px 20px; font-size: 1em; line-height: 1.3em;}
 #sidebar p, #sidebar ul, #sidebar ol {margin: 0 0 15px 0; padding: 0;}
 #sidebar p.block {background-color: #eee; font-size: 0.9em; line-height: 1.3em; margin: 10px auto 20px auto; padding: 10px; color: #555;}
 #sidebar ul li, #sidebar ol li {list-style: none; padding:0; margin: 0 0 5px 0; padding: 0;}
 #sidebar ul.avmenu li a {display: block; width: 190px; margin: 0 0 5px 0; padding: 10px 0 10px 10px; font-size: 1.3em; font-weight: 400; text-align: left; background-color: #eee; color: #a54569;}
 #sidebar ul.avmenu li a:hover {background-color: #f4f4f4; color: #222; text-decoration: none;}
-#sidebar ul.avmenu li a.current {color: #222;}
+#sidebar ul.avmenu li a.current {color: #222;} */
+
+/* Top Bar */
+#sidebar {
+    width: 100%; /* Full width to accommodate edge-to-edge design */
+    max-width: 840px; /* Maximum width to align with the main content */
+    height: 50px; /* Reduced height for a sleeker look */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items for a symmetric look */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow for subtlety */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the top bar horizontally */
+    z-index: 1000;
+    border-bottom: 2px solid #f0f0f0; /* Solid border for a defined edge */
+}
+
+/* Links within the top bar */
+#sidebar a {
+    color: #333; /* Dark grey for better contrast */
+    text-decoration: none; /* No underline for a cleaner look */
+    font-weight: 400; /* Normal font weight for a more refined look */
+    font-size: 1em; /* Standard font size for readability */
+    padding: 0 15px; /* Adjusted padding for clickable area */
+    transition: color 0.2s ease; /* Faster transition for hover effects */
+}
+
+#sidebar a:hover, #sidebar a.current {
+    color: #1a8cff; /* Brighter color for an interactive feel */
+}
+
+/* Adjust list style for horizontal layout */
+#sidebar ul.avmenu {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Display the list items in a row */
+    padding: 0; /* Remove all padding for a clean look */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for list items */
+#sidebar ul.avmenu li {
+    margin: 0 15px; /* Adjusted space between menu items */
+}
+
+/* Style for links */
+#sidebar ul.avmenu li a {
+    font-family: 'Lato', sans-serif; /* Consistent font family */
+    text-transform: uppercase; /* Uppercase letters for a modern touch */
+    letter-spacing: 0.05em; /* Spacing out letters for a premium feel */
+}
+
+/* Style for link hover state */
+#sidebar ul.avmenu li a:hover {
+    color: #1a8cff; /* A consistent bright color for hover states */
+}
+
+/* Style for the current page link */
+#sidebar ul.avmenu li a.current {
+    font-weight: 600; /* Bolder font for the active link */
+    /* border-bottom: 3px solid #1a8cff; Underline active link with a solid line */
+}
+
+
+
 
 /* Footer */
-#footer {clear: both; margin: 10px 0 0; padding: 20px; line-height: 1.6em; width: 960px; color: #777; text-align: left;}
+#footer {clear: both; margin: 10px 0 0; padding: 20px; line-height: 1.6em; width: 960px; color: #777; text-align: right;}
 #footer p {margin: 0;}
 
+
+
 /* Additional classes */
-.post {margin-bottom: 20px;}
+/* .homesection {margin-bottom: 0px;} */
+.homesection {
+    /* background-color: #f9f9f9; A light grey background */
+    padding: 1rem; /* Consistent padding */
+    margin-bottom: 1rem; /* Space between homesections */
+    border-left: 4px solid #2980b9; /* A blue accent border on the left */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: none !important;
+}
+.homesection h2 {
+    font-size: 1.5em; /* Adjusted font size */
+    margin-bottom: 0.5rem; /* Less space below the heading */
+    color: #2980b9; /* The modern blue shade */
+    box-shadow: none !important;
+}
+
+.homesection h3 {
+    border-top: 1px solid #ddd; /* Adds a separator line */
+    padding-top: 1em; /* Adds space above the heading */
+}
+
+/* Academic services style */
+.academic-services {
+    font-style: italic;
+    color: #7f8c8d; /* A soft grey color for less important text */
+}
+
+.publication-list {
+    list-style: none; /* Removes the default bullet points */
+    padding-left: 20px; /* Adjust this value to move the list to the right */
+    margin-bottom: 1em; /* Adds some space below the list */
+    font-size: 15px; /* Set the font size for the list */
+  }
+  
+  .publication-list li {
+    margin-bottom: 0.5em; /* Adds space between list items */
+  }
+  
+  .publication-list li::before {
+    content: '• '; /* Adds a custom bullet point */
+    color: #2980b9; /* You can use any color you like */
+    font-weight: bold; /* Makes the bullet point bold */
+    display: inline-block; /* Needed for the content property to work */
+    width: 1em; /* Provides a fixed width for alignment */
+    margin-left: -1em; /* This pulls the bullet point into the padding area */
+  }
+  
+
+
+#UpdatedPublications {
+    counter-reset: publicationCounter; /* Reset the counter */
+  }
+  
+  .entry td::before {
+    counter-increment: publicationCounter; /* Increment the counter */
+    content: counter(publicationCounter) ". "; /* Display the counter */
+    /* font-weight: bold; Optional: Make the counter bold */
+  }
+
+
+
 .meta {text-align: right; font-size: 0.9em; color: #555; border-top: 1px solid #eee; padding: 5px 10px;}
 .clear {clear: both; margin: 0; padding: 0;}
 .right {text-align: right;}
@@ -115,7 +276,7 @@ p {
 #reversed #sidebar {float: right; margin: 20px 20px 20px 0;}
 
 /* Alternate style */
-#alternate #container {width: 760px; padding-top: 20px;}
+/* #alternate #container {width: 760px; padding-top: 20px;}
 #alternate #title {width: 720px;}
 #alternate #main {clear: both; width: 720px; margin-top: 0; float: none;}
 #alternate p {font-size: 1.1em;}
@@ -130,7 +291,7 @@ p {
 #alternate #sidebar ul li {margin-bottom: 20px;}
 #alternate #sidebar ul a {padding: 5px; background-color: #eee;}
 #alternate #footer {width: 720px; margin: 20px 0 0 20px; padding: 20px 0;}
-#alternate #footer p {margin: 0; text-align: center;}
+#alternate #footer p {margin: 0; text-align: center;} */
 
 
 /* table setting */
