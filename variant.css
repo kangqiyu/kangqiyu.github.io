@@ -232,18 +232,18 @@ p {
     color: #7f8c8d; /* A soft grey color for less important text */
 }
 
-.publication-list {
+.shortpublist {
     list-style: none; /* Removes the default bullet points */
     padding-left: 20px; /* Adjust this value to move the list to the right */
     margin-bottom: 1em; /* Adds some space below the list */
     font-size: 15px; /* Set the font size for the list */
   }
   
-  .publication-list li {
+  .shortpublist li {
     margin-bottom: 0.5em; /* Adds space between list items */
   }
   
-  .publication-list li::before {
+  .shortpublist li::before {
     content: '• '; /* Adds a custom bullet point */
     color: #2980b9; /* You can use any color you like */
     font-weight: bold; /* Makes the bullet point bold */
