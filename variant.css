@@ -70,6 +70,15 @@ p {
     text-align: justify;
 }
 
+ul {
+    text-align: justify;
+  }
+  
+  ul li {
+    /* display: inline-block; This makes the list item inline, but be aware it will change how list items are displayed */
+    width: 100%; /* Forces the list item to take the full width and justify the text inside */
+  }
+  
 
 /* Site title */
 #title {
@@ -119,9 +128,8 @@ p {
 
 
 /* #main h2 {clear: left; margin: 0 0 10px 0; padding: 10px 0 10px 10px; background-color: #eee; color: #555; text-decoration: none;} */
-#pub {float: right; width: 700px; margin: 20px 20px 10px 20px; padding: 0; line-height: 1.3em;}
-
-
+/* #fullpub {width: calc(100% - 100px); margin: 20px auto; padding: 0; line-height: 1.3em;} */
+#fullpub {float: right; width: 700px; margin: 20px 20px 10px 20px; padding: 0; line-height: 1.3em;}
 
 /* Sidebar */
 /* #sidebar {width: 200px; float: left; margin: 20px 0 20px 20px; font-size: 1em; line-height: 1.3em;}
