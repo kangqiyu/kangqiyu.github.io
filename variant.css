@@ -140,7 +140,28 @@ ul {
     margin-top: 18px;
   }
   
+  /* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    #title .hero-text h1 {
+      font-size: 24px; /* Smaller font size for smaller screens */
+      padding: 10px; /* Add padding to prevent crowding */
+    }
   
+    #title .hero-text .hero-subtext {
+      font-size: 14px; /* Smaller font size for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #title .hero-text h1 {
+      font-size: 20px; /* Even smaller font size for very small screens */
+      padding: 5px; /* Adjust padding to maintain proportion */
+    }
+  
+    #title .hero-text .hero-subtext {
+      font-size: 12px; /* Adjust font size for very small screens */
+    }
+  }
   
 
 
