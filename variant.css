@@ -81,7 +81,8 @@ ul {
   
 
 /* Site title */
-#title {
+
+/* #title {
     background-image: url(./Figs/ustc_winter.jpg); 
     background-color: #cccccc;
     height: 200px;
@@ -97,7 +98,52 @@ ul {
     left: 60%;
     transform: translate(-10%, -50%);
     color: rgb(121, 117, 117);
-}
+} */
+
+
+#title {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Figs/ntu_xlb.jpg'); 
+    background-color: #cccccc;
+    height: 200px;
+    background-position: 20% 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+  }
+  
+  #title .hero-text {
+    position: absolute; /* Absolute position within the #title div */
+    top: 50%; /* Align to the center from the top */
+    left: 50%; /* Align to the center from the left */
+    transform: translate(-50%, -50%); /* Adjust to center the content precisely */
+    text-align: center; /* Center text alignment */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Align children in the center horizontally */
+    justify-content: center; /* Center children vertically */
+  }
+  
+  #title .hero-text h1 {
+    font-size: 37px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 300;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin: 0; /* Reset margin */
+  }
+  
+  #title .hero-text .hero-subtext {
+    font-size: 17px;
+    margin-top: 18px;
+  }
+  
+  
+  
+
+
 
 /* Introtext */
 #introtext {font-family: Georgia,Times New Roman,serif; font-size: 1.2em; color: #555; margin: 40px 40px; text-align: center;}
