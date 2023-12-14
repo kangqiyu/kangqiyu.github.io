@@ -133,16 +133,37 @@ ul {
     font-weight: 300;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     margin: 0; /* Reset margin */
-    display: block;
+    display: block !important;
   }
   
   #title .hero-text .hero-subtext {
-    display: block;
+    display: block !important;
     font-size: 17px;
     margin-top: 18px;
   }
   
-
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    #title .hero-text h1 {
+      font-size: 20px !important; /* Smaller font size for smaller screens */
+      padding: 10px !important; /* Add padding to prevent crowding */
+    }
+  
+    #title .hero-text .hero-subtext {
+      font-size: 14px !important; /* Smaller font size for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #title .hero-text h1 {
+      font-size: 16px !important; /* Even smaller font size for very small screens */
+      padding: 5px !important; /* Adjust padding to maintain proportion */
+    }
+  
+    #title .hero-text .hero-subtext {
+      font-size: 12px !important; /* Adjust font size for very small screens */
+    }
+  }
 
 
 /* Introtext */
