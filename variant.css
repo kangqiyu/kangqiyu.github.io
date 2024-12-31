@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* General layout */
+body {
+    padding-top: 80px;
+    margin: 0;
+    padding: 20px;
+    font: 85% "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+#container {
+    /* padding-top: 70px; */
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1rem;
+    color: #2c3e50; /* Dark blue for a modern look */
+}
+
+
+
+/* Improved styles */
+h1 {
+    font-size: 3.2em;
+    margin-bottom: 20px; /* adjusted for better spacing */
+}
+h2 {
+    font-size: 2em;
+    font-weight: 300; /* Lighter font-weight */
+}
+h3 {
+    margin: 1.5px 0;
+    line-height: 1.4em; 
+    font-size: 1.4em; /* again, slightly increased */
+    font-weight: 300; /* Lighter font-weight */
+}
+h4 {
+    margin: 10px 0;
+    font-size: 1.5em; /* adjusted for consistency */
+}
+a {
+    text-decoration: none;
+    color: #0649f0; /* toned down the color to a neutral shade */
+    transition: color 0.3s; /* smooth transition */
+}
+a:hover {
+    text-decoration: underline;
+    color: #0749f2; /* slightly darker shade on hover */
+}
+a img {
+    border: 0;
+    display: block; /* to prevent any unwanted default styles */
+}
+p {
+    margin: 0 0 20px 0; /* increased bottom margin for better readability */
+    line-height: 1.4em; /* increased for better readability */
+    font-size: 1em;
+    text-align: justify;
+}
+
+ul {
+    text-align: justify;
+  }
+  
+  ul li {
+    /* display: inline-block; This makes the list item inline, but be aware it will change how list items are displayed */
+    width: 100%; /* Forces the list item to take the full width and justify the text inside */
+  }
+  
+
+#title {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Figs/ustc_gaoxin.jpg'); 
+    background-color: #cccccc;
+    height: 200px;
+    background-position: 50% 95%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    border-radius: 20px;
+  }
+  
+  #title .hero-text {
+    position: absolute; /* Absolute position within the #title div */
+    top: 50%; /* Align to the center from the top */
+    left: 50%; /* Align to the center from the left */
+    transform: translate(-50%, -50%); /* Adjust to center the content precisely */
+    text-align: center; /* Center text alignment */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Align children in the center horizontally */
+    justify-content: center; /* Center children vertically */
+  }
+  
+  #title .hero-text h1 {
+    font-size: 37px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 300;
+    white-space: nowrap;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin: 0; /* Reset margin */
+    display: block !important;
+  }
+  
+  #title .hero-text .hero-subtext {
+    display: block !important;
+    font-size: 17px;
+    margin-top: 18px;
+  }
+  
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    #title .hero-text h1 {
+      font-size: 20px !important; /* Smaller font size for smaller screens */
+      padding: 10px !important; /* Add padding to prevent crowding */
+    }
+  
+    #title .hero-text .hero-subtext {
+      font-size: 14px !important; /* Smaller font size for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #title .hero-text h1 {
+      font-size: 16px !important; /* Even smaller font size for very small screens */
+      padding: 5px !important; /* Adjust padding to maintain proportion */
+    }
+  
+    #title .hero-text .hero-subtext {
+      font-size: 12px !important; /* Adjust font size for very small screens */
+    }
+  }
+
+
+/* Introtext */
+#introtext {font-family: Georgia,Times New Roman,serif; font-size: 1.2em; color: #555; margin: 40px 40px; text-align: center;}
+
+/* Main content */
+/* #main {padding-top: 50px; float: right; width: 700px; margin: 20px 20px 10px 20px; padding: 0; line-height: 1.3em;} */
+
+#main {
+    width: calc(100% - 40px); /* Adjust width to account for padding */
+    margin: 20px auto; /* Apply equal top and bottom margins, auto left and right margins for centering */
+    padding: 20px; /* If you want padding inside the main content area */
+    line-height: 1.3em;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+#main h2 {
+    clear: left;
+    margin: 0 0 20px 0; /* Increase bottom margin, remove left padding */
+    padding: 0; /* Remove padding to allow the text to align with the rest of the content */
+    background-color: transparent; /* Remove background color for a clean look */
+    color: #333; /* Use a darker grey for better contrast and readability */
+    font-size: 1.75em; /* Adjust the font size as needed */
+    font-weight: 600; /* Make the font slightly bolder */
+    text-decoration: none; /* Ensure there's no underline */
+    text-transform: uppercase; /* Optional: You can make the text uppercase for emphasis */
+    letter-spacing: 1px; /* Optional: Increase letter-spacing for a touch of elegance */
+}
+
+
+/* #main h2 {clear: left; margin: 0 0 10px 0; padding: 10px 0 10px 10px; background-color: #eee; color: #555; text-decoration: none;} */
+/* #fullpub {width: calc(100% - 100px); margin: 20px auto; padding: 0; line-height: 1.3em;} */
+#fullpub {float: right; width: 700px; margin: 20px 20px 10px 20px; padding: 0; line-height: 1.3em;}
+
+
+/* Top Bar */
+#sidebar {
+    width: 100%; /* Full width to accommodate edge-to-edge design */
+    max-width: 840px; /* Maximum width to align with the main content */
+    height: 50px; /* Reduced height for a sleeker look */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items for a symmetric look */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow for subtlety */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the top bar horizontally */
+    z-index: 1000;
+    border-bottom: 2px solid #f0f0f0; /* Solid border for a defined edge */
+}
+
+/* Links within the top bar */
+#sidebar a {
+    color: #333; /* Dark grey for better contrast */
+    text-decoration: none; /* No underline for a cleaner look */
+    font-weight: 400; /* Normal font weight for a more refined look */
+    font-size: 1em; /* Standard font size for readability */
+    padding: 0 15px; /* Adjusted padding for clickable area */
+    transition: color 0.2s ease; /* Faster transition for hover effects */
+}
+
+#sidebar a:hover, #sidebar a.current {
+    color: #1a8cff; /* Brighter color for an interactive feel */
+}
+
+/* Adjust list style for horizontal layout */
+#sidebar ul.kmenu {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Display the list items in a row */
+    padding: 0; /* Remove all padding for a clean look */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for list items */
+#sidebar ul.kmenu li {
+    margin: 0 15px; /* Adjusted space between menu items */
+}
+
+/* Style for links */
+#sidebar ul.kmenu li a {
+    font-family: 'Lato', sans-serif; /* Consistent font family */
+    text-transform: uppercase; /* Uppercase letters for a modern touch */
+    letter-spacing: 0.05em; /* Spacing out letters for a premium feel */
+}
+
+/* Style for link hover state */
+#sidebar ul.kmenu li a:hover {
+    color: #1a8cff; /* A consistent bright color for hover states */
+}
+
+/* Style for the current page link */
+#sidebar ul.kmenu li a.current {
+    font-weight: 600; /* Bolder font for the active link */
+    /* border-bottom: 3px solid #1a8cff; Underline active link with a solid line */
+}
+
+
+
+
+/* Footer */
+/* #footer {clear: both; margin: 20px 0 0; padding: 20px; line-height: 1.6em; width: 960px; color: #777; text-align: right;} */
+#footer {
+  clear: both;
+  margin: 20px auto; /* Ensures that the margin is auto on both sides to center the footer */
+  padding: 20px;
+  line-height: 1.6em;
+  display: flex; /* Uses Flexbox to manage content */
+  justify-content: center; /* This will center the content horizontally in the footer */
+  align-items: center; /* Centers the content vertically if needed */
+  width: 100%; /* Ensures the footer takes full width of its container */
+  color: #777;
+  text-align: center; /* This centers the text if flexbox is not supported */
+  box-sizing: border-box; /* Ensures padding does not affect the width */
+}
+
+
+
+#footer p {margin: 0;}
+
+
+
+/* Additional classes */
+/* .homesection {margin-bottom: 0px;} */
+.homesection {
+    /* background-color: #f9f9f9; A light grey background */
+    padding: 1rem; /* Consistent padding */
+    margin-bottom: 1rem; /* Space between homesections */
+    border-left: 4px solid #2980b9; /* A blue accent border on the left */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: none !important;
+}
+
+
+.homesection h3 {
+    border-top: 1px solid #ddd; /* Adds a separator line */
+    padding-top: 0.2em; /* Adds space above the heading */
+}
+
+/* Academic services style */
+.academic-services {
+    font-style: italic;
+    color: #7f8c8d; /* A soft grey color for less important text */
+}
+
+.shortpublist {
+    list-style: none; /* Removes the default bullet points */
+    padding-left: 20px; /* Adjust this value to move the list to the right */
+    margin-bottom: 1em; /* Adds some space below the list */
+    font-size: 15px; /* Set the font size for the list */
+  }
+  
+  .shortpublist li {
+    margin-bottom: 0.5em; /* Adds space between list items */
+  }
+  
+  .shortpublist li::before {
+    content: '• '; /* Adds a custom bullet point */
+    color: #2980b9; /* You can use any color you like */
+    font-weight: bold; /* Makes the bullet point bold */
+    display: inline-block; /* Needed for the content property to work */
+    width: 1em; /* Provides a fixed width for alignment */
+    margin-left: -1em; /* This pulls the bullet point into the padding area */
+  }
+  
+
+#UpdatedPublications {
+    counter-reset: publicationCounter; /* Reset the counter */
+  }
+  
+  .entry td::before {
+    counter-increment: publicationCounter; /* Increment the counter */
+    content: counter(publicationCounter) ". "; /* Display the counter */
+  }
+
+
+.meta {text-align: right; font-size: 0.9em; color: #555; border-top: 1px solid #eee; padding: 5px 10px;}
+.clear {clear: both; margin: 0; padding: 0;}
+.right {text-align: right;}
+.hide {display: none;}
+
+/* Reversed style */
+#reversed #main {float: left;}
+#reversed #sidebar {float: right; margin: 20px 20px 20px 0;}
+
+/* table setting */
+table {
+    border: 1px gray none;
+    width: 100%;
+    empty-cells: show;
+    border-spacing: 0em 0.1em;
+    margin: 1em 0em;
+    counter-reset: rowNumber;
+    font-size:100%
+}
+
+th,
+td {
+    border: none;
+    padding: 0.5em;
+    vertical-align: top;
+    text-align: justify;
+}
+tr.bull {
+    counter-increment: rowNumber 0;
+}
+
+tr.bull td:first-child::before {
+    min-width: 1em;
+    margin-right: 0.5em;
+    content: "•";
+}
