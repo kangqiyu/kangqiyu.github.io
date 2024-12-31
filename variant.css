@@ -78,8 +78,9 @@ ul {
   
 
 #title {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Figs/ustc_gaoxin.jpg'); 
-    background-color: #cccccc;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Figs/ustc_gaoxin.jpg');  */
+    background: url('./Figs/ustc_gaoxin.jpg'); 
+    /* background-color: #cccccc; */
     height: 200px;
     background-position: 50% 95%;
     background-repeat: no-repeat;
