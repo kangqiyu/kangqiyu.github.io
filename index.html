@@ -1,92 +1,147 @@
 <!DOCTYPE html>
-<html>
-	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="Kang Qiyu" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="variant.css" />
-	<title>Qiyu Kang</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Qiyu Kang" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Qiyu Kang — Professor at the University of Science and Technology of China. Physics-grounded machine learning, multimodal LLMs, and AI for Science." />
+  <title>Qiyu Kang</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-
 <body>
-<div id="container">
-	<div id="main">
-		<div id="title">
-			<div id="title">
-				<!-- <div class="hero-text">
-				  <h1>Kang,Qiyu</h1>
-				</div> -->
-			</div>
-		</div>
-		
-		<!-- <div id="introtext"> -->
-		<!-- <p><em>"博学而笃志 切问而近思"</em></p> -->
-		<!-- </div> -->
-		<div style="height: 20px;"></div>
-		
-		<div class="homesection">
-			<h2>Research Interest and Biography</h2>
-			<p style="font-size: 1.2em;"> 	
-				Our group advances trustworthy, physics-grounded, and efficient machine learning for complex dynamical systems and AI for Science. Our work spans robust perception and control (adversarial defense, out-of-distribution generalization, interpretable decisions, learnable safety barriers), continuous-time modeling (ODE/FDE/SDE, PINNs, graph dynamics) for accurate long-horizon prediction, and scalable foundation models via quantization and ultra-efficient spiking/binary networks for edge deployment. 
-			</p>
-			<p style="font-size: 1.2em;"> 	
-				I am currently a Professor (Special Appointment) at the University of Science and Technology of China (USTC). Before that, I was a research fellow at Nanyang Technological Universty (NTU). 
-				I received the B.S. degree in Electronic Information Science and Technology from USTC in 2015, and the Ph.D. degree from NTU in 2020, supervised by <a href="https://wptay.github.io/TayWeePeng.html" style="color: #290303;">Prof. Tay Wee Peng</a>.
-			</p>
-			
-				<p class="academic-services">Academic services: ELSEVIER Signal Processing, NeurIPS, ICRL, ICML, IEEE TSP, AAAI, CVPR, IEEE TITS, TNNLS, IEEE L-CSS, IJCAI, PR, and others.</p>  
-		</div>
 
-		<div class="homesection">
-			<h2>Advertisements</h2>
-			<h4>Multiple opening Ph.D. and M.Sc. positions are available. </h4>
-		</div>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Qiyu Kang</a>
+    <ul class="nav-links">
+      <li><a class="current" href="index.html">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+    </ul>
+  </div>
+</nav>
 
-		<div class="homesection">
-			<h2>News</h2>
-			<h3>One paper is accepted to NeurIPS 2025.</h3>
-			<p> This <a href="https://kangqiyu.github.io/"> paper </a> proposes a generalized fractional differential equation (FDE) framework that replaces fixed fractional kernels with learnable attention kernels, enabling input-adaptive memory weighting for systems with long-range dependencies. </p>
-			<h3>One paper is accepted to CVPR 2025.</h3>
-			<p> This <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_Multi-Modal_Aerial-Ground_Cross-View_Place_Recognition_with_Neural_ODEs_CVPR_2025_paper.pdf"> paper </a> advances UAV place recognition by fusing ground cameras and LiDAR with aerial imagery via a manifold-based neural ODE and multi-domain alignment, achieving state-of-the-art cross-view retrieval on large-scale benchmarks. </p>
-			<h3>Two paper are accepted to AAAI 2025.</h3>
-			<p> These <a href="https://github.com/kangqiyu/torchfde">two papers</a> examine the use of fractional differential equations (FDE) in driving machine learning with the aim to improve the training efficiency and model effectiveness. </p>
-			<h3>One paper is accepted to NeurIPS 2024 as Spotlight.</h3>
-			<p> Our <a href="https://openreview.net/pdf?id=kEQFjKqiqM">paper</a> introduces a highly general continuous GNN framework inspired by differential equations. This framework features a learnable probability distribution over a range of real numbers for the derivative orders. </p>
-			<h3>One paper is accepted to TITS.</h3>
-			<p> Our <a href="https://ieeexplore.ieee.org/document/10704955">paper</a> proposes multi-modal place recognition models that utilize global fusion with manifold metric attention, achieving state-of-the-art performance on three large-scale benchmarks. </p>
-			<h3>One paper is accepted to ICLR 2024 as Spotlight.</h3>
-			<p> Our <a href="https://openreview.net/forum?id=wcka3bd7P4">paper</a> introduces a novel continuous GNN framework that incorporates fractional differential equations. </p>
-			<h3>Three papers are accepted to AAAI 2024.</h3>
-			<ul class="shortpublist">
-				<li>Coupling Graph Neural Networks with Fractional Order Continuous Dynamics: A Robustness Study</li>
-				<li>DistilVPR: Cross-Modal Knowledge Distillation for Visual Place Recognition</li>
-				<li>PosDiffNet: Positional Neural Diffusion for Point Cloud Registration in a Large Field of View with Perturbations</li>
-			  </ul>
-			<h3>One paper is accepted to NeurIPS 2023 as Spotlight.</h3>
-			<p> Our <a href="https://openreview.net/forum?id=xtADRDRsM2">paper</a> introduces a novel physics-driven GNN that leverages conservative Hamiltonian flows and Lyapunov stability to significantly enhance robustness against adversarial perturbations. </p>
-			<h3>One paper is accepted to ICML 2023.</h3>
-			<p> Our <a href="https://proceedings.mlr.press/v202/kang23d/kang23d.pdf">paper</a> presents a novel approach for graph node embedding that addresses the challenge of varying embedding spaces for different data types.</p>
-			<h3>One paper is accepted to IJCAI 2023.</h3>
-			<p> Our <a href="https://www.ijcai.org/proceedings/2023/0518.pdf">paper</a> introduces a novel GNN approach to address the challenge of heterophilic graphs by incorporating the convection-diffusion equation.</p>
-			<h3>One paper is accepted to CVPR 2023.</h3>
-			<p> Our <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_HypLiLoc_Towards_Effective_LiDAR_Pose_Regression_With_Hyperbolic_Fusion_CVPR_2023_paper.pdf">paper</a> introduces a new model for LiDAR pose regression.</p>
-			<h3>One paper is accepted to AAAI 2023.</h3>
-			<p> In this <a href="https://ojs.aaai.org/index.php/AAAI/article/view/25765">paper</a>, to deal with challenging driving environments, we propose RobustLoc, which derives its robustness against perturbations from neural differential equations.</p>
-		</div>
-	</div>
+<main class="shell">
 
-	<div id="sidebar">
-		<ul class="kmenu">
-			<li><a class="current" href="index.html">Home Page</a></li>
-			<li><a href="publications.html">Publications</a></li>
-		</ul>
-	</div>
-	
-	<div id="footer">
-		<p>Copyright &copy; 2023 <a href="index.html">Qiyu</a> All Rights Reserved | USTC </a><br />
-		</p>
-	</div>
-</div>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-photo">
+      <img src="Figs/qiyukang.jpg" alt="Qiyu Kang" />
+    </div>
+    <div class="hero-info">
+      <h1><a href="https://faculty.ustc.edu.cn/kangqiyu" target="_blank" rel="noopener">Qiyu Kang</a></h1>
+      <p class="position"><strong>Professor (Special Appointment)</strong></p>
+      <p class="affil">
+        University of Science and Technology of China, Hefei, Anhui, China
+      </p>
+      <p class="contact">
+        <span class="label">Email</span> <a href="mailto:qiyukang@ustc.edu.cn">qiyukang@ustc.edu.cn</a><br/>
+        <span class="label">Scholar</span> <a href="https://scholar.google.com/citations?user=cS45eEcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a><br/>
+        <span class="label">GitHub</span> <a href="https://github.com/PhysAGI" target="_blank" rel="noopener">github.com/PhysAGI</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h2>About</h2>
+    <p>
+      I am a Professor (Special Appointment) at the
+      <a href="https://faculty.ustc.edu.cn/kangqiyu/">University of Science and Technology of China</a> (USTC).
+      Before joining USTC, I was a research fellow at
+      <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a> (NTU) in Singapore.
+      I received my B.S. in Electronic Information Science and Technology from USTC in 2015
+      and my Ph.D. from NTU in 2020, advised by
+      <a href="https://wptay.github.io/TayWeePeng.html">Prof. Tay Wee Peng</a>.
+    </p>
+    <p>
+      My group works on physics-grounded and efficient machine learning, with a focus on world models, multimodal large language models, intelligent agents, and AI for Science.  We aim to develop theoretically grounded, scalable models that bridge physical insight and modern deep learning.
+    </p>
+  </section>
+
+  <!-- News -->
+  <section class="section" id="news">
+    <h2>News</h2>
+    <table class="news">
+      <tr>
+        <td class="date">Jan 2026</td>
+        <td class="content">1 paper accepted at <span class="venue">ICLR 2026</span>.</td>
+      </tr>
+      <tr>
+        <td class="date">Jan 2026</td>
+        <td class="content">1 paper accepted at <span class="venue">IEEE TPAMI</span>.</td>
+      </tr>
+      <tr>
+        <td class="date">Sep 2025</td>
+        <td class="content">1 paper accepted at <span class="venue">NeurIPS 2025</span>.</td>
+      </tr>
+      <tr>
+        <td class="date">Feb 2025</td>
+        <td class="content">1 paper accepted at <span class="venue">CVPR 2025</span>.</td>
+      </tr>
+      <tr>
+        <td class="date">Feb 2025</td>
+        <td class="content">2 papers accepted at <span class="venue">AAAI 2025</span>.</td>
+      </tr>
+      <tr>
+        <td class="date">Dec 2024</td>
+        <td class="content">1 paper accepted at <span class="venue">NeurIPS 2024</span> <span class="spot">Spotlight</span>.</td>
+      </tr>
+      <tr>
+        <td class="date">Oct 2024</td>
+        <td class="content">1 paper accepted at <span class="venue">IEEE TITS</span>.</td>
+      </tr>
+      <tr>
+        <td class="date">May 2024</td>
+        <td class="content">1 paper accepted at <span class="venue">ICLR 2024</span> <span class="spot">Spotlight</span>.</td>
+      </tr>
+      <tr>
+        <td class="date">Feb 2024</td>
+        <td class="content">3 papers accepted at <span class="venue">AAAI 2024</span>.</td>
+      </tr>
+      <tr>
+        <td class="date">Dec 2023</td>
+        <td class="content">1 paper accepted at <span class="venue">NeurIPS 2023</span> <span class="spot">Spotlight</span>.</td>
+      </tr>
+      <tr>
+        <td class="date">Jul 2023</td>
+        <td class="content">1 paper accepted at <span class="venue">ICML 2023</span>.</td>
+      </tr>
+      <tr>
+        <td class="date">Aug 2023</td>
+        <td class="content">1 paper accepted at <span class="venue">IJCAI 2023</span>.</td>
+      </tr>
+      <tr>
+        <td class="date">Jun 2023</td>
+        <td class="content">1 paper accepted at <span class="venue">CVPR 2023</span>.</td>
+      </tr>
+      <tr>
+        <td class="date">Feb 2023</td>
+        <td class="content">1 paper accepted at <span class="venue">AAAI 2023</span>.</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Research interests -->
+  <section class="section" id="research">
+    <h2>Research interests</h2>
+    <ul class="research-list">
+      <li>Neural ODE / FDE / SDE</li>
+      <li>Physics-informed World Models</li>
+      <li>Physics-informed Machine Learning</li>
+      <li>Multimodal Large Language Models</li>
+      <li>Intelligent Agents</li>
+      <li>AI for Science</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <div>© 2026 Qiyu Kang</div>
+    <div>University of Science and Technology of China</div>
+  </div>
+</footer>
+
 </body>
 </html>
